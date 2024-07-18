@@ -15,7 +15,7 @@ classes = {
     0: 'Ahegao',
     1: 'Angry',
     2: 'Happy',
-    3: 'Neutral'.
+    3: 'Neutral',
     4: 'Sad',
     5: 'Surprise'
 }
