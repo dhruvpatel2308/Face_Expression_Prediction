@@ -11,7 +11,7 @@ if image_file is not None:
     image = image_file.getvalue()
 
     response = response.post(
-        "https://dpatel9923",
+        "https://dpatel9923-face-expression-prediction.hf.space/prediction",
         files = {
             "image": ByteIO(image)
         }
