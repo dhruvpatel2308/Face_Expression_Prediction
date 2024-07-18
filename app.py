@@ -2,12 +2,16 @@ import streamlit as st
 import requests
 import json
 from io import BytesIO
+from PIL import Image
 
 st.title('Face Expression Prediction')
 
 image_file = st.file_uploader("Upload Image")
 
 if image_file is not None:
+    image = Image.open(image_file)  # Open the image file
+    st.image(image, caption='Uploaded Image', use_column_width=True)  # Display the image
+
     image = image_file.getvalue()
 
     response = requests.post(
