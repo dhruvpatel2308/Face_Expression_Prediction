@@ -24,4 +24,4 @@ if image_file is not None:
     )
 
     label = json.loads(response._content)
-    st.write(f"Expression of Face is {label['label']}")
+    st.write(f"Expression of Face is {label['class']}")
