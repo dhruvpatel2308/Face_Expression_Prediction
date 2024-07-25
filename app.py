@@ -12,7 +12,7 @@ if image_file is not None:
     image = Image.open(image_file)  # Open the image file
     resized_image = image.resize((100, 100))
     
-    st.image(resized_image, caption='Uploaded Image', width=100, height=100)  # Display the resized image
+    st.image(resized_image, caption='Uploaded Image',use_column_width=True)  # Display the resized image
 
     image = image_file.getvalue()
 
