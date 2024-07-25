@@ -72,4 +72,6 @@ The entire model, including the architecture, weights, and optimizer state, is s
 - The model is evaluated on validation data, and the confusion matrix and ROC-AUC curves are plotted.
 - The training time and accuracy are also printed.
 
+[Frontend](https://faceexpression-classifier-hkquamyltpzbqmfuhkdjkt.streamlit.app/)
+[FaceExpression_video_webm]([streamlit-app-2024-07-24-21-07-66.webm](https://github.com/user-attachments/assets/45bcfd28-61e7-41c8-a7f7-12f6e7b42ffc)
 
