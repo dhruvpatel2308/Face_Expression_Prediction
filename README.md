@@ -75,5 +75,5 @@ The entire model, including the architecture, weights, and optimizer state, is s
 # [Frontend](https://faceexpression-classifier-hkquamyltpzbqmfuhkdjkt.streamlit.app/)
 
 
-# ([streamlit-app-2024-07-24-21-07-66.webm](https://github.com/user-attachments/assets/45bcfd28-61e7-41c8-a7f7-12f6e7b42ffc)
+[video](https://github.com/user-attachments/assets/45bcfd28-61e7-41c8-a7f7-12f6e7b42ffc)
 
