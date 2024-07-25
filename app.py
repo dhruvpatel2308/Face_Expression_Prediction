@@ -10,7 +10,7 @@ image_file = st.file_uploader("Upload Image")
 if image_file is not None:
     image = image_file.getvalue()
 
-    response = response.post(
+    response = requests.post(
         "https://dpatel9923-face-expression-prediction1.hf.space/prediction",
         files = {
             "image": ByteIO(image)
