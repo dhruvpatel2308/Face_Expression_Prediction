@@ -10,7 +10,7 @@ image_file = st.file_uploader("Upload Image")
 
 if image_file is not None:
     image = Image.open(image_file)  # Open the image file
-    resized_image = image.resize((100, 100))
+    resized_image = image.resize((10, 10))
     
     st.image(resized_image, caption='Uploaded Image', use_column_width=True)  # Display the resized image
 
