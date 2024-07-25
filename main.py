@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, file_uploader
+from fastapi import FastAPI, UploadFile, File
 import json
 from PIL import Image
 from io import BytesIO
@@ -10,7 +10,7 @@ app = FastAPI()
 image_shape = (224,224,3)
 num_classes = 6
 model = build_model(image_shape, num_classes)
-model.load_weights('./model_with_weights.h5')
+model.load_weights('./new_model_weights.h5')
 classes = {
     0: 'Ahegao',
     1: 'Angry',
@@ -33,8 +33,7 @@ async def prediction(image: UploadFile = File(...)):
     # process image
     image = Image.open(BytesIO(image))
     image = image.resize((image_shape[0], image_shape[1]))
-    image = image.convert('L')
-    image = np.expand_dims(image, axis=2)
+
 
     image = np.expand_dims(image, axis=0)
     prediction = model.predict(image)[0]
