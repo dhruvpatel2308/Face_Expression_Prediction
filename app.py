@@ -19,7 +19,7 @@ if image_file is not None:
     response = requests.post(
         "https://dpatel9923-face-expression-prediction1.hf.space/prediction",
         files = {
-            "image": ByteIO(image)
+            "image": BytesIO(image)
         }
     )
 
