@@ -2,6 +2,7 @@ import streamlit as st
 import requests
 import json
 from io import BytesIO
+from PIL import Image
 
 st.title('Face Expression Prediction')
 
